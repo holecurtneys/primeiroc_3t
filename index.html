@@ -1,36 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>primeiro C</title>
-<script src="estudo.js"></script>
+<html lang="pt-br" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-widh , initial-scale=1.0">
+  <title>Primeiro E</title>
+  <script src="estudo.js"></script>
+  <link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
-    <div class="calc">
+  <input type="checkbox" id="calcFin">
+  <div class="calculadora">
+    <label for="calcFin"><h3>Financeira</h3></label>
+<div class="calcF"></div>
+    <div id="psTotal">
+      <span id="total">Total: 0,00</span><br>
+    </div>
+    Valor: <input id="valor" placeholder="Digite o Capital" type="text"><br>
+    Juros(Mensal): <input id="juros" placeholder="Digite os Juros (mensal)" type="text"><br>
+    Nr. Meses: <input id="meses" placeholder="Digite o Tempo (meses)" type="text"><br>
+    <button id="btnCalc" onclick="calcula()">Enviar</button><br>
+    <div class="spmes">
+    <span id="mes">Mês a Mês</span>
+  </div>
+  </div>
+</div>
+  <br><br><br>
 
-        <span id="totalGeral">Total: 0,00</span><br>
+  Nota 1: <input id="t1" type="text"><br>
+  Nota 2: <input id="t2" type="text"><br>
+  Nota 3: <input id="t3" type="text"><br>
 
-   Valor: <input id="valor" placeholder="R$" type="text"><br>
-   Juros(Mensais): <input id="juros" placeholder="% mês" type="text"><br>
-   N°. de Messes: <input id="messes" placeholder="tempo" type="text"><br>
-   <button onclick="mat()">Enviar</button></div></br>
-
-   <span id="tempo">Mês a mês</span>
-
-   </div>
-
-   <br><br><br><br>
-   <span id= "resultado">0,00</span><br>
-   Valor 1: <input id="v1" type="text"><br>
-   Valor 2: <input id="v2" type="text"><br>
-   Valor 3: <input id="v3" type="text"><br>
-   <button onclick="media()">Calcular Média</button>
-   <button onclick="soma() ">Calcular Soma</button>
-
+  <button onclick="somarNotas()">Somar Notas</button>
+  <span id="resultadosoma">0</span><br>
+  <button onclick="mediaNotas()">Média Notas</button>
+  <span id="resultadomedia">0</span><br>
+  <button onclick="fecharNotas()">Notas para Fechar</button>
+  <span id="resultadofechar">0</span><br>
 
 </body>
-</html>
+<html>
